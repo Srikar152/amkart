@@ -1,2 +1,6 @@
-Fully working PHP/AJAX contact form script is available in the pro version of the template.
-You can buy it from: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
+Thanks for downloading this template!
+
+Template Name: Flexor
+Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
+Author: BootstrapMade.com
+License: https://bootstrapmade.com/license/

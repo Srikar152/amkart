@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <style> .slide-image{
+    width: 100%;
+    height: 600px;
+    border: 2px;
+  }
+  .slide-image img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+  }</style>
+  <section class="home">
+    <nav style="background-color:#012c31 ;"  class="navbar navbar-expand-lg ">
+        <a href="index.html" class="navbar-brand text-white" style="font-family:Open Sans ;font-size: 1cm;"><strong>Amkart.</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="mt-2">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white" ><b>HOME</b></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white"></a></li>
+                <li class="nav-item"><a href="addtocart.html" class="nav-link text-white"><b> MY ORDERS</b></a></li>
+                <li class="nav-item text-white"><a href="#" class="nav-link"></a></li>
+                
+                <li class="nav-item"><a href="index.html" class="nav-link text-white"><B> MY ACCOUNT</B></a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="products.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <B> SHOP BY CATEGORY</B>
+                    
+                    <ul class="dropdown-menu dropdown-menu-success" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="products.html">TELEVISION</a></li>
+                      <li><a class="dropdown-item" href="products.html">HOME THEATRE SYSTEM</a></li>
+                      <li><a class="dropdown-item" href="products.html">MOBILE PHONES</a></li>
+                      <li><a class="dropdown-item" href="products.html">ACCESSORIES</a></li>
+                      <li><a class="dropdown-item" href="products.html">LAPTOPS</a></li>
+                      <li><a class="dropdown-item" href="products.html">HOME APPLIANCES</a></li>
+                      <li><a class="dropdown-item" href="products.html">EARPHONES & AUDIO SYSTEMS</a></li>
+                    </ul>
+                  </li></a>
+            </ul>
+            </div>
+            <div>
+          <form class="d-flex justify-content-between mt-4" >
+            <input class="form-control dropdown-menu-md-start"  type="search" placeholder="Search your favourite products" aria-label="Search">
+            <button class="btn btn-danger btn- btn-secondary" type="submit">Search</button>
+          </form>
+        </div>
+        
+       
+    </div>
+    <div class="pt-5 mt-3">
+      <center>
+          <a href="addtocart.html" class="btn btn-danger btn-block" style="color: rgb(239, 246, 248);"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+          </svg> VIEW MY CART</a>
+          <div class="d-flex justify-content-between mt-md-5">
+  </center>
+  </div>
+
+      </nav>  
+    
+</section>
+  
+<div class="container-fluider" style="width: 100%;
+height: 300px; border:#0082ca 10px; ">
+<div id="carouselExampleInterval " class="carousel slide "data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active data-bs-interval=2000">
+      <div class="slide-image">
+       <a href=""></a> <img src="https://m.media-amazon.com/images/I/51LYIkOP9rL._SX1500_.jpg" class="d-block w-100">
+       </div>
+    </div>
+    <div class="carousel-item data-bs-interval=2000">
+      <img src="https://m.media-amazon.com/images/I/71cQMXCLSvL._SX3000_.jpg" class="d-block w-100" class="d-block w-100" alt="..." height="500px">
+    </div>
+    <div class="carousel-item data-bs-interval=2000" >
+      <img src="https://m.media-amazon.com/images/I/71qlKqpJnlL._SX3000_.jpg" class="d-block w-100" alt="..." height="500px" >
+    </div>
+  </div>
+  
+</div>
+</div>
+  <br>
+  <br>
+  
+<!--Cards-->
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card" style="width: 30rem;">
+        <img src="https://www.mylloyd.com/media/products/32HS550D-small.jpg"height="280px" width="380px" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title text-center"><b> TELEVISION </b></h4>
+        <p class="card-text text-center"><b> ₹12000 <s>₹20000</s></b><a href="addtocart.html"> </a></p>
+        <a href="addtocart.html" class="btn btn-danger center-block "><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 17 17">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> ADD TO CART</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card" style="width: 30rem;">
+        <img src="https://m.media-amazon.com/images/I/41O1C449O1L._SL500_.jpg"height="280px"width="380px" class="card-img-top">
+      <div class="card-body"><B>
+        <h4 class="card-title text-center"><B> SAMSUNG PHONE</B></h4>
+        <p class="card-text text-center">₹100000 <S>₹150000</S>
+          </B>
+
+        </p>
+        <a href="addtocart.html" class="btn btn-danger center-block"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 17 17">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> ADD TO CART</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card" style="width: 30rem;">
+        <img src="https://m.media-amazon.com/images/I/61gYxcIGjvL._SL1500_.jpg" height="280px" weight="380px" class="card-img-top">
+      <div class="card-body"><b>
+        <h4 class="card-title text-center"><b> BOAT HEADSET</b></h4>
+        <p class="card-text text-center">₹1200  <s>₹2000</s></a></p>
+        <a href="addtocart.html" class="btn btn-danger center-block"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 17 17">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> ADD TO CART</a>
+      </div></b>
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="card" style="width: 30rem;">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2020/9/FL/XY/EP/2995733/yamaha-ns-160-5-1-channel-home-theater-system-500x500.jpg"height="290px" weight="380px" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title text-center"><B> HOME THEATRE SYSTEM</B></h4><B>
+        <p class="card-text text-center">₹2000 <S>₹2500</S></p></B>
+        <a href="addtocart.html" class="btn btn-danger center-block"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 17 17">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> ADD TO CART</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 mt-5">
+    <div class="card" style="width: 30rem;">
+        <img src="https://m.media-amazon.com/images/I/61SNhlAhprL._SL1500_.jpg"height="280px" width="380px" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title text-center"><b> CHARGER CABLE </b></h4>
+        <p class="card-text text-center"><b> ₹1200 <s>₹2000</s></b><a href="#"> </a></p>
+        <a href="addtocart.html" class="btn btn-danger center-block "><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 17 17">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> ADD TO CART</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 mt-5">
+    <div class="card" style="width: 30rem;">
+        <img src="https://www.factoryforward.com/wp-content/uploads/2022/01/sandisk-ultra-usb-3-flashdrive-sliding-pendrive.jpg"height="280px"width="380px" class="card-img-top">
+      <div class="card-body"><B>
+        <h4 class="card-title text-center"><B> SANDISK PENDRIVE</B></h4>
+        <p class="card-text text-center">₹900 <S>₹950</S>
+          </B>
+
+        </p>
+        <a href="addtocart.html" class="btn btn-danger center-block"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 17 17">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> ADD TO CART</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 mt-5">
+    <div class="card" style="width: 30rem;">
+        <img src="https://m.media-amazon.com/images/I/71p5BsKx-OL._SL1500_.jpg" height="280px" weight="380px" class="card-img-top">
+      <div class="card-body"><b>
+        <h4 class="card-title text-center"><b> ACCESSORIES BAGS</b></h4>
+        <p class="card-text text-center">₹1200  <s>₹2000</s></a></p>
+        <a href="addtocart.html" class="btn btn-danger center-block"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 17 17">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> ADD TO CART</a>
+      </div></b>
+    </div>
+  </div>
+  <div class="col-sm-3 mt-5">
+    <div class="card" style="width: 30rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb3W7kgaOuRjy5Cs1Gw74Sd9OQJUgs-nwwOw&usqp=CAU"height="280px" weight="380px" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title text-center"><B> ELECTRIC BULB</B></h4><B>
+        <p class="card-text text-center">₹999 <S>₹1500</S></p></B>
+        <a href="addtocart.html" class="btn btn-danger center-block"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart4" viewBox="0 0 17 17">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> ADD TO CART</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<footer id="footer" style="background-color: #012c31;">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-5 footer-contact text-white">
+          <h3><b>Amkart.</b></h3>
+          <p>
+            A108 gandhipuram <br>
+            coimbatore, tamilnadu<br>
+            India <br><br>
+            <strong>Phone:</strong> +91 98707 26322<br>
+            <strong>Email:</strong> infoamkart@gmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-4 footer-links text-white">
+          <h4>Useful Links</h4>
+          <ul>
+            <li> <a href="index.html"class="text-white" > Home</a></li>
+            <li> <a class="text-white"  href="index.html">About us</a></li>
+            <li><a class="text-white" href="index.html">Services</a></li>
+            <li> <a class="text-white"  href="index.html" >Terms of service</a></li>
+            <li> <a class="text-white"  href="index.html">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links text-white">
+          <h4>Our Services</h4>
+          <ul>
+            <li> <a class="text-white" href="products.html">Television</a></li>
+            <li> <a class="text-white" href="products.html">Personal computers</a></li>
+            <li> <a class="text-white"  href="products.html">Laptops</a></li>
+            <li> <a class="text-white" href="products.html">Marketing</a></li>
+            <li> <a class="text-white"  href="products.html">customer support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter text-black">
+          <h4>Join Our Newsletter</h4>
+          <p>subscribe our newsletter,so that you can get latest updates and trends as soon as available.</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-lg-flex py-5">
+
+    <div class="me-lg-auto text-center text-lg-start text-white">
+      <div class="copyright">
+        &copy; Copyright <strong><span>AMKART.</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/ -->
+       
+      </div>
+    </div>
+    <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+
+
+   
+    
+  
+ 
+</body>
+</html>
